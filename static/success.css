@@ -3,7 +3,6 @@
 body {
     background-color: #D486FF;
     font-family: Arial, sans-serif;
-    overflow-y: hidden;
   }
   
   .container {
@@ -81,6 +80,10 @@ body {
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
 }
+h4{
+  text-align: right;
+}
+
 
 
   
