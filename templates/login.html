@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="static/login.css">
+        <title>Hey!</title>
+    </head>
+    <body>
+        <h1>Login</h1>
+        <form method="post" action="{{ url_for('login') }}">
+            <label for="password">Enter the PIN</label>
+            <input type="password" name="password" id="password" placeholder="Hint:Mausam">
+            <input type="submit" value="Submit">
+        </form>
+        {% if error %}
+            <center><p style="color:red">{{ error }}</p></center>
+        {% endif %}
+    </body>
+</html>

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+/* Add a black background */
+body {
+    background-color: black;
+}
+
+/* Style the login form */
+form {
+    width: 90%; /* Reduce the width for smaller screens */
+    max-width: 300px; /* Set a maximum width to prevent the form from becoming too wide on larger screens */
+    margin: 12em auto; /* Center the form horizontally */
+    padding: 1em;
+    background-color: rgb(29, 29, 29);
+    display: flex; /* center the form vertically */
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+/* Style the form labels and inputs */
+label, input {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+
+}
+label{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2.5em;
+    color: #00e208;
+}
+
+input[type="password"] {
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+}
+
+input[type="submit"] {
+    padding: 0.5em 1em;
+    border: solid black 2px;
+    border-radius: 3px;
+    font-size: 1em;
+    margin-top: 0.8em;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Rubik Mono One', sans-serif;
+
+}
+
+input[type="submit"]:hover {
+    background-color: #00e208; /* Darker green on hover */
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+    form {
+        width: 100%; /* Make the form full width on smaller screens */
+    }
+}
+
+label {
+    animation: color-change 4s infinite;
+}
+
+@keyframes color-change {
+    0% {
+        color: red;
+    }
+    25% {
+        color: blue;
+    }
+    50% {
+        color: #00e208;
+    }
+    75% {
+        color: yellow;
+    }
+    100% {
+        color: red;
+    }
+}
+form {
+    animation: color-change-input 4s infinite;
+}
+
+@keyframes color-change-input {
+    0% {
+        color: rgb(17, 17, 17);
+    }
+    25% {
+        color: rgb(84, 84, 84);
+    }
+    50% {
+        color: #0e110e;
+    }
+    75% {
+        color: rgb(40, 40, 40);
+    }
+    100% {
+        color: #555;
+    }
+}
+
+
