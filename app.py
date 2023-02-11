@@ -2,7 +2,7 @@ from flask import Flask, request, redirect, render_template
 
 app = Flask(__name__)
 
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def login():
     error = None
     if request.method == 'POST':
