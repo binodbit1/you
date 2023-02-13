@@ -6,7 +6,7 @@ app = Flask(__name__)
 def login():
     error = None
     if request.method == 'POST':
-        if request.form['password'] == '0502':
+        if request.form['password'] == 'wait@7854Shrey!':
             return redirect('/success')
         else:
             error = 'Invalid PIN'
